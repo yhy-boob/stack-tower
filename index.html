@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Stack Tower — Satisfying 3D Block Stacking Game</title>
+<meta name="description" content="Stack the blocks perfectly in this satisfying 3D stacking game. How high can you build your tower? Free to play online.">
+<meta name="keywords" content="stack game, tower game, block stacking, satisfying game, puzzle game, free online game">
+<meta property="og:title" content="Stack Tower — Satisfying 3D Block Stacking Game">
+<meta property="og:description" content="Stack blocks perfectly, build the tallest tower, chase the perfect combo.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-wrap">
+    <canvas id="game-canvas"></canvas>
+  </div>
+
+  <!-- HUD -->
+  <div id="hud">
+    <div class="hud-left">
+      <div id="score">0</div>
+      <div class="hud-label">Score</div>
+    </div>
+    <div class="hud-right">
+      <div id="best">0</div>
+      <div class="hud-label">Best</div>
+    </div>
+  </div>
+
+  <!-- Ad slot (shown only after AdSense integration) -->
+  <div id="ad-top" class="ad-slot hidden"></div>
+
+  <div id="hint">Click / Tap / Space to drop</div>
+
+  <!-- Game over overlay -->
+  <div id="overlay" class="hidden">
+    <div class="panel">
+      <h1>Game Over</h1>
+      <div class="final-score"><span id="final-score">0</span></div>
+      <div class="final-best">Best: <span id="final-best">0</span></div>
+      <button id="btn-revive" class="btn btn-ghost hidden">Revive (watch ad)</button>
+      <button id="btn-restart" class="btn btn-primary">Play Again</button>
+    </div>
+  </div>
+
+  <script src="js/renderer.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/ads.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
